@@ -1,0 +1,22 @@
+<div class="mx-auto px-4 py-4 sm:px-8 lg:container">
+  <!-- Header -->
+  <app-nft-header></app-nft-header>
+  <!-- end Header -->
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+    <!-- Dual Card -->
+    <app-nft-dual-card [nft]="nft[0]" class="md:col-span-2"></app-nft-dual-card>
+    <!-- end Dual Card -->
+    <!-- Single Card -->
+    <app-nft-single-card [nft]="nft[1]"></app-nft-single-card>
+    <!-- end Single Card -->
+    <!-- Single Card -->
+    <app-nft-single-card [nft]="nft[2]"></app-nft-single-card>
+    <!-- end Single Card -->
+    <!-- Single Card -->
+    <app-nft-chart-card class="md:col-span-2 xl:col-span-1"></app-nft-chart-card>
+    <!-- end Single Card -->
+    <!-- Auctions Table -->
+    <app-nft-auctions-table class="md:col-span-2 xl:col-span-3"></app-nft-auctions-table>
+  </div>
+</div>
